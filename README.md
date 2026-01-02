@@ -19,7 +19,7 @@ Explains different types of loops in Go. The program demonstrates:
 - Iterating over a map
 - Iterating over a collection with both index and value
 
-## 5. basics-05_for_as_while
+## 5. basics_05_for_as_while
 Explores Go's `for` used as a while-style and infinite loop with `break`. The program:
 - Counts from 1 to 10 using a condition-controlled `for`.
 - Runs an infinite loop and exits with `break`.
