@@ -30,6 +30,12 @@ Demonstrates conditional logic in Go using `if`, `else if`, and `else`, along wi
 - Categorizes a numeric `score` into letter grades (`A`, `B`, `C`, `F`).
 - Checks parity of two integers (`a`, `b`) and prints whether both are even, one is even, or both are odd using `&&` and `||`.
 
+## 7. basics_07_switch
+Illustrates Go's `switch` statement with various features. The program:
+- Uses a switch with multiple conditions to classify days as weekdays or weekends.
+- Demonstrates `fallthrough` to execute the next case.
+- Shows a type switch to handle different types using `interface{}` and type assertions.
+
 
 
 
