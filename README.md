@@ -43,6 +43,12 @@ Covers array fundamentals in Go, including declaration, access, modification, an
 - Calculates array length and iterates using both traditional `for` loops and `range`.
 - Demonstrates multi-dimensional arrays with nested loops for traversal.
 
+## 9. basics_09_blank_identifiers
+Introduces the blank identifier (`_`) in Go for ignoring unwanted values. The program:
+- Uses `_` to discard one return value from a function while capturing the other.
+- Ignores multiple return values entirely.
+- Employs `_` in range loops to skip indices when only values are needed, such as summing a slice.
+
 
 
 

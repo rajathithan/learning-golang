@@ -39,11 +39,13 @@ func main() {
 	fmt.Println("Multi-dimensional Array:", matrix)
 
 	// Accessing elements in multi-dimensional array
-	fmt.Println("Element at (1,2):", matrix[1][2])
+	fmt.Println("Element at row-2 & Column-3 - (1,2):", matrix[1][2])
 
 	// Iterating over multi-dimensional array
 	fmt.Println("Multi-dimensional Array elements:")
+	// Iterate each row
 	for i := 0; i < len(matrix); i++ {
+		// Iterate each column
 		for j := 0; j < len(matrix[i]); j++ {
 			fmt.Printf("Element at (%d,%d): %d\n", i, j, matrix[i][j])
 		}
@@ -61,7 +63,7 @@ func main() {
 	// dest2 is a pointer to an array of 3 integers
 	var dest2 *[3]int = &src2
 	dest2[0] = 10
-	fmt.Println("Modified array:", src2)
+	fmt.Println("Source Array is modified due to pointer modification:", src2)
 	
 
 	// Array comparison
