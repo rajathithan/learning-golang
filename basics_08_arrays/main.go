@@ -51,6 +51,13 @@ func main() {
 		}
 	}
 
+	// Using range to iterate over multi-dimensional array
+	for _, row := range matrix {
+		for _, value := range row {
+			fmt.Println("Value:", value)
+		}
+	}
+
 	//copying arrays
 	var src = [3]int{1, 2, 3}
 	dest := src // copies the entire array
