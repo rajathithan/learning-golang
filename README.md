@@ -36,6 +36,13 @@ Illustrates Go's `switch` statement with various features. The program:
 - Demonstrates `fallthrough` to execute the next case.
 - Shows a type switch to handle different types using `interface{}` and type assertions.
 
+## 8. basics_08_arrays
+Covers array fundamentals in Go, including declaration, access, modification, and iteration. The program:
+- Declares and initializes a fixed-size array of integers.
+- Accesses and modifies individual elements.
+- Calculates array length and iterates using both traditional `for` loops and `range`.
+- Demonstrates multi-dimensional arrays with nested loops for traversal.
+
 
 
 
