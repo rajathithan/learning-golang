@@ -45,4 +45,12 @@ func main() {
 	fmt.Println("Capacity of slice1 after appending:", cap(slice1))
 	fmt.Println("Original array after appending to slice1:", numbers)
 
+
+	// Creating a slice from fruits using make
+	sliceFruits := make([]string, 2, 5)
+	copy(sliceFruits, fruits[:2])
+	fmt.Println("sliceFruits (first two fruits):", sliceFruits)	
+	fmt.Println("Length of sliceFruits:", len(sliceFruits))
+	fmt.Println("Capacity of sliceFruits:", cap(sliceFruits))
+
 }
