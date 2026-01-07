@@ -49,6 +49,29 @@ Introduces the blank identifier (`_`) in Go for ignoring unwanted values. The pr
 - Ignores multiple return values entirely.
 - Employs `_` in range loops to skip indices when only values are needed, such as summing a slice.
 
+## 10. basics_10_slices
+Explains slices in Go, which are dynamic arrays built on top of arrays. The program demonstrates:
+- Declaring and initializing slices directly or from arrays.
+- Slicing arrays to create sub-slices with start:end syntax.
+- Modifying slices and observing how changes affect the underlying array (since slices share memory).
+- Appending elements to slices using `append()`.
+- Creating slices with `make()` and understanding length vs. capacity.
+
+## 11. basics_11_maps
+Covers maps (key-value data structures) in Go. The program shows:
+- Declaring and initializing maps with literal syntax.
+- Accessing values by key and handling missing keys.
+- Adding and updating key-value pairs.
+- Checking if a key exists using the comma ok idiom.
+- Deleting keys with `delete()`.
+- Iterating over maps with `range` (note: iteration order is not guaranteed).
+
+## 12. basics_12_ranges
+Demonstrates the `range` keyword in Go for iterating over collections. The program:
+- Iterates over a string, showing both index and rune (Unicode code point) values for each character.
+- Explains the difference between iterating over bytes vs. runes in strings (important for multi-byte Unicode).
+- Shows `range` with arrays/slices (index and value) and maps (key and value).
+
 
 
 
