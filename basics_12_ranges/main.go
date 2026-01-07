@@ -5,9 +5,11 @@ import "fmt"
 func main() {
 	var message = "Hello, Ranges!"
 	for i, v := range message {
+
 		// Prints index and Decimal rune of each character
 		fmt.Println(i,v)
 		
+		// string interpolation is not supported in Go, using Printf instead
 		// Prints index and Unicode of each character
 		fmt.Printf("Index :{%d}, Unicode:{%U}\n", i, v)
 
