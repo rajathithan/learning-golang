@@ -72,6 +72,9 @@ Demonstrates the `range` keyword in Go for iterating over collections. The progr
 - Explains the difference between iterating over bytes vs. runes in strings (important for multi-byte Unicode).
 - Shows `range` with arrays/slices (index and value) and maps (key and value).
 
-
-
-
+## 13. basics_13_functions
+Introduces functions in Go as first-class citizens. The program demonstrates:
+- Defining functions with parameters and return types.
+- Passing functions as arguments to other functions.
+- Returning functions from other functions.
+- Using function variables to store and call functions.
