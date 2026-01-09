@@ -72,11 +72,11 @@ func main() {
 	fmt.Println(str, num)
 
 	// function returning a type & an error type
-	output, err := compare(10.232323, 2.23434323232)
+	greaterValue, err := compare(10.232323, 2.23434323232)
 	if err != nil {
 		fmt.Println("Error:", err)
 	} else {
-		fmt.Println("The output value is :", output)
+		fmt.Println("The greater value is :", greaterValue)
 	}
 
 }

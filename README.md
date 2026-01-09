@@ -78,3 +78,6 @@ Introduces functions in Go as first-class citizens. The program demonstrates:
 - Passing functions as arguments to other functions.
 - Returning functions from other functions.
 - Using function variables to store and call functions.
+- Functions returning multiple values of the same type.
+- Functions returning multiple values of different types.
+- Functions returning a value along with an error for error handling.
