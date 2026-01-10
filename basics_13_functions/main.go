@@ -47,6 +47,18 @@ func compare(a, b float64) (float64, error) {
 	}
 }
 
+// Variadic functions with different parameter types 
+// Variadic parameters must be the last in the parameter list
+// These parameters can be infinite in number
+func sum(text string, numbers ...int) (string, int) {
+	total := 0
+	for _, num := range numbers {
+		total += num
+	}
+	return text, total
+}
+
+
 func main() {
 	// calling the add function
 	ans := add(3, 5)
@@ -78,5 +90,10 @@ func main() {
 	} else {
 		fmt.Println("The greater value is :", greaterValue)
 	}
+
+	// calling variadic function
+	nums := []int{1, 2, 3, 4, 5}
+	text, total := sum("The total sum is", nums...)
+	fmt.Println(text, total)
 
 }
