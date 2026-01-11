@@ -81,3 +81,8 @@ Introduces functions in Go as first-class citizens. The program demonstrates:
 - Functions returning multiple values of the same type.
 - Functions returning multiple values of different types.
 - Functions returning a value along with an error for error handling.
+## 14. basics_14_defer
+Explains the `defer` keyword in Go, which schedules function calls to be executed after the surrounding function returns. The program demonstrates:
+- Using `defer` for resource cleanup (e.g., closing files or network connections).
+- Defer execution order, which follows Last In, First Out (LIFO) principle.
+- How `defer` interacts with variables - the value is evaluated at the time the defer statement is executed, not when the deferred function runs.
