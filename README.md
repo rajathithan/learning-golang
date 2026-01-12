@@ -99,3 +99,17 @@ Explains the `defer` keyword in Go, which schedules function calls to be execute
 - Using `defer` for resource cleanup (e.g., closing files or network connections).
 - Defer execution order, which follows Last In, First Out (LIFO) principle.
 - How `defer` interacts with variables - the value is evaluated at the time the defer statement is executed, not when the deferred function runs.
+
+
+## 15. basics_15_panic
+Introduces the `panic` function in Go, which stops normal execution and begins panicking. The program demonstrates:
+- Triggering a panic with a custom message when a condition is met.
+- How panic causes the program to crash with a stack trace.
+- Using `defer` to execute cleanup code before the panic unwinds the stack.
+
+
+## 16. basics_16_recover
+Explains the `recover` function in Go, used to regain control of a panicking goroutine. The program demonstrates:
+- Using `recover()` inside a deferred function to catch panics.
+- Preventing the program from crashing by handling the panic gracefully.
+- Printing the recovered panic value for debugging purposes.
