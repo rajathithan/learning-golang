@@ -113,3 +113,15 @@ Explains the `recover` function in Go, used to regain control of a panicking gor
 - Using `recover()` inside a deferred function to catch panics.
 - Preventing the program from crashing by handling the panic gracefully.
 - Printing the recovered panic value for debugging purposes.
+
+## 17. basics_17_exit
+Demonstrates program termination using `os.Exit()`. The program shows:
+- Using `os.Exit()` to terminate the program immediately with an exit code.
+- How `os.Exit()` bypasses deferred function calls (unlike normal program termination).
+- The difference between normal return and `os.Exit()` in terms of cleanup execution.
+
+## 18. basics_18_init
+Explains the `init()` function in Go, which runs automatically before `main()`. The program demonstrates:
+- Declaring and using init functions for setup and initialization.
+- How multiple init functions are executed in sequential order.
+- Init functions running before the main function, useful for configuring settings or initializing variables.
