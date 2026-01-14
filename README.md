@@ -3,6 +3,7 @@
 
 Each folder contains a `main.go` file with example code and comments for easy understanding.
 
+# basics concepts
 
 ## 1. basics_01_imports
 Demonstrates how to import packages in Go, including the use of aliases. The program makes an HTTP GET request using an aliased import for the `net/http` package and prints the response status.
@@ -125,3 +126,12 @@ Explains the `init()` function in Go, which runs automatically before `main()`. 
 - Declaring and using init functions for setup and initialization.
 - How multiple init functions are executed in sequential order.
 - Init functions running before the main function, useful for configuring settings or initializing variables.
+
+# Intermediate Concepts
+
+## 1. intermediate/int_01_closures
+Introduces closures in Go, which are functions that capture and remember variables from their surrounding lexical scope. The program demonstrates:
+- Creating a closure with the `add()` function that maintains state between calls, accumulating a sum.
+- How each closure instance has its own independent state.
+- Using anonymous functions to create closures, such as a `multiplier` function that returns a closure for multiplying by a specific factor.
+- Practical examples showing how closures can be used to create functions with persistent state without global variables.
