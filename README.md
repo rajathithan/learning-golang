@@ -129,9 +129,12 @@ Explains the `init()` function in Go, which runs automatically before `main()`. 
 
 # Intermediate Concepts
 
-## 1. intermediate/int_01_closures
+## 1. int_01_closures
 Introduces closures in Go, which are functions that capture and remember variables from their surrounding lexical scope. The program demonstrates:
 - Creating a closure with the `add()` function that maintains state between calls, accumulating a sum.
 - How each closure instance has its own independent state.
 - Using anonymous functions to create closures, such as a `multiplier` function that returns a closure for multiplying by a specific factor.
 - Practical examples showing how closures can be used to create functions with persistent state without global variables.
+
+## 2. int_02_recursion
+Introduces recursion in Go, where a function calls itself to solve problems. The program demonstrates generating the Fibonacci sequence recursively, showing how each call builds upon the previous ones to compute the sequence up to a given number of terms.
