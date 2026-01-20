@@ -138,3 +138,11 @@ Introduces closures in Go, which are functions that capture and remember variabl
 
 ## 2. int_02_recursion
 Introduces recursion in Go, where a function calls itself to solve problems. The program demonstrates generating the Fibonacci sequence recursively, showing how each call builds upon the previous ones to compute the sequence up to a given number of terms.
+
+## 3. int_03_pointers
+Introduces pointers in Go, which store memory addresses of variables. The program demonstrates:
+- Declaring pointer variables using `*type` syntax.
+- Getting the memory address of a variable using the `&` operator.
+- Dereferencing pointers to access the value they point to using `*pointer`.
+- Modifying the original variable's value through the pointer.
+- Passing pointers to functions to allow the function to modify the caller's variables.
