@@ -69,4 +69,16 @@ func main() {	// Creating an instance of Person struct
 	fmt.Println("After 10% raise:")
 	p.DisplayInfo()
 
+	// anonymous struct instance
+	anon := struct {
+		Title  string
+		Author string
+		Pages  int
+	}{
+		Title:  "Go Programming",
+		Author: "John Doe",
+		Pages:  350,
+	}
+
+	fmt.Println("Anonymous Struct:", anon)
 }
