@@ -146,3 +146,36 @@ Introduces pointers in Go, which store memory addresses of variables. The progra
 - Dereferencing pointers to access the value they point to using `*pointer`.
 - Modifying the original variable's value through the pointer.
 - Passing pointers to functions to allow the function to modify the caller's variables.
+
+## 4. int_04_strings_runes
+Introduces strings and runes in Go, which are essential for handling text and Unicode characters. The program demonstrates:
+- Iterating over strings using `range` to access both index and rune values.
+- The difference between escape sequences in double quotes vs. backticks.
+- String comparison using lexicographical order.
+- Counting characters in Unicode strings using `utf8.RuneCountInString`.
+- String concatenation using the `+` operator.
+- Using runes to represent individual Unicode characters.
+
+## 5. int_05_formatters
+Explains various format specifiers in Go's `fmt` package for controlling output formatting. The program demonstrates:
+- General format verbs like `%v`, `%#v`, `%T`, and `%%`.
+- Integer formatting in different bases: decimal (`%d`), binary (`%b`), hexadecimal (`%x`, `%X`), and octal (`%o`).
+- String formatting with width, alignment, and truncation using `%s`, `%q`.
+- Float formatting with precision and scientific notation using `%f`, `%g`, `%e`, `%E`.
+- Boolean formatting using `%t`.
+
+## 6. int_06_structs
+Covers structs in Go, which are composite data types that group related fields. The program demonstrates:
+- Defining structs with named fields and anonymous fields.
+- Embedding structs to create composite types.
+- Creating struct instances using struct literals and field assignment.
+- Defining methods on structs with value receivers and pointer receivers.
+- Using anonymous structs for one-off data structures.
+
+## 7. int_07_interfaces
+Introduces interfaces in Go, which define sets of methods for polymorphism and abstraction. The program demonstrates:
+- Defining interfaces with method signatures.
+- Implementing interfaces by providing methods on structs.
+- Using interfaces as function parameters for polymorphic behavior.
+- How structs can implement multiple interfaces.
+- Calling methods through interface values.
