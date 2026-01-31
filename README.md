@@ -179,3 +179,4 @@ Introduces interfaces in Go, which define sets of methods for polymorphism and a
 - Using interfaces as function parameters for polymorphic behavior.
 - How structs can implement multiple interfaces.
 - Calling methods through interface values.
+- Compile-time checks ensuring structs fully implement interfaces (demonstrated with a manufacturer struct that only partially implements the interface).
