@@ -15,7 +15,7 @@ func (s * Stack[T]) push (element T) {
 }
 
 // Pop method to remove and return the top element from the stack
-func (s * Stack[T]) pop () (T, bool) {
+func (s * Stack[T]) pop() (T, bool) {
 	if len(s.elements) == 0 {
 		var zero T
 		return zero, false // return zero value and false if stack is empty
