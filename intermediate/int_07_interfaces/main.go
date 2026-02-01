@@ -89,7 +89,7 @@ func main() {
 	PrintDescription(product)
 	PrintDescription(service)
 
-	//cannot use manufacturer (variable of struct type manufacturer) as details value 
+	// cannot use manufacturer (variable of struct type manufacturer) as details value 
 	// in argument to PrintDescription: manufacturer does not implement details 
 	// (missing method monthlyprice)
 

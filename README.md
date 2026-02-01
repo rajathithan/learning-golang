@@ -180,3 +180,13 @@ Introduces interfaces in Go, which define sets of methods for polymorphism and a
 - How structs can implement multiple interfaces.
 - Calling methods through interface values.
 - Compile-time checks ensuring structs fully implement interfaces (demonstrated with a manufacturer struct that only partially implements the interface).
+
+## 8. int_08_generics
+Introduces generics in Go (available in Go 1.18+), which allow writing flexible, type-safe code that works with multiple types. The program demonstrates:
+- Defining generic structs using type parameters (e.g., `Stack[T any]`).
+- Implementing methods on generic types with receivers and type parameters.
+- Creating generic stack implementations that work with different types (int, string, etc.).
+- The `push()` method to add elements to the stack using `append()`.
+- The `pop()` method to remove and return elements, handling the empty stack case by returning a zero value and false.
+- The `isEmpty()` method to check if the stack has elements.
+- Practical usage by instantiating and using the same generic stack type with different concrete types.
