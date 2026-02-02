@@ -25,12 +25,17 @@ type Employee struct {
 	Phone    // Embedded struct with anonymous fields
 }
 
-// value receiver method
+// value receiver method for Person
+func (p Person) DisplayInfo() {
+	fmt.Printf("Name: %s, Age: %d, Emails: %v\n", p.Name, p.Age, p.Emails)
+}
+
+// value receiver method for Employee
 func (e Employee) DisplayInfo() {
 	fmt.Printf("Name: %s, Position: %s, Salary: %.2f\n", e.Emp.Name, e.Position, e.Salary)
 }
 
-// pointer receiver method
+// pointer receiver method for Employee
 func (e *Employee) GiveRaise(percent float64) {
 	e.Salary += e.Salary * percent / 100
 }
@@ -64,10 +69,13 @@ func main() {	// Creating an instance of Person struct
 	fmt.Println("Employee-1", p.Emp.Name)
 	fmt.Println("Employee-2", p2.Emp.Name)
 
-	p.DisplayInfo()
+	p.Emp.DisplayInfo() // Calls Person's DisplayInfo
+	p.DisplayInfo()     // Calls Employee's DisplayInfo
+
+	// Giving a raise
 	p.GiveRaise(10)
 	fmt.Println("After 10% raise:")
-	p.DisplayInfo()
+	p.DisplayInfo()    // Calls Employee's DisplayInfo
 
 	// anonymous struct instance
 	anon := struct {
