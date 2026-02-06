@@ -190,3 +190,11 @@ Introduces generics in Go (available in Go 1.18+), which allow writing flexible,
 - The `pop()` method to remove and return elements, handling the empty stack case by returning a zero value and false.
 - The `isEmpty()` method to check if the stack has elements.
 - Practical usage by instantiating and using the same generic stack type with different concrete types.
+
+## 9. int_09_errors
+Introduces error handling in Go, which is a fundamental part of writing robust programs. The program demonstrates:
+- Creating custom errors using `errors.New()`.
+- Functions returning both a result and an error.
+- Checking for errors after function calls and handling them appropriately.
+- Printing error messages to inform users about what went wrong.
+- Using conditional logic to branch based on whether an operation succeeded or failed.
