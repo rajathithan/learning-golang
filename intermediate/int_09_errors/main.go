@@ -6,14 +6,19 @@ import (
 	"math"
 )
 
+// A type can implement the methods of the interface, and thus be used as an error type. 
+// This allows us to create custom error types with additional context or information.
+// Custom error type definition
 type customError struct {
 	message string
 }
 
+// Using Error method from the error interface to implement our custom error type
 func (e *customError) Error() string {
 	return e.message
 }
 
+// error interface implementation allows us to use customError as an error type
 func newCustomError(msg string) error {
 	return &customError{message: msg}
 }
