@@ -26,7 +26,7 @@ func sqrt(value float64) (float64, error) {
 		// Implementing error using a custom error type
 		//return 0, newCustomError("cannot compute square root of a negative number")
 
-		// Implementing error wrapping with %w (Go 1.13+)
+		// Implementing using Errorf function & error wrapping with %w (Go 1.13+)
 		//baseErr := errors.New("math domain error")
 		//return 0, fmt.Errorf("cannot compute square root of %v: %w", value, baseErr)
 	}
