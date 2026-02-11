@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func doubleValue(p *int) {
+	*p = *p * 2
+}
+
 func main() {
 
 	// Pointer declaration and usage
@@ -20,6 +24,3 @@ func main() {
 	fmt.Println("The current value of num is:", *ptr)
 }
 
-func doubleValue(p *int) {
-	*p = *p * 2
-}

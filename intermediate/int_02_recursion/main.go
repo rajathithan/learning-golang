@@ -2,11 +2,6 @@ package main
 
 import "fmt"
 
-func main() {
-	fmt.Println("Fibonacci Sequence:", fibonacci(3))
-	fmt.Println("Fibonacci Sequence:", fibonacci(15))
-}
-
 // fibonacci returns the fibonacci sequence using recursion
 func fibonacci(n int) []int {
 	if n <= 0 {
@@ -21,4 +16,11 @@ func fibonacci(n int) []int {
 	nextValue := seq[len(seq)-1] + seq[len(seq)-2]
 	return append(seq, nextValue)
 }
+
+func main() {
+	fmt.Println("Fibonacci Sequence:", fibonacci(3))
+	fmt.Println("Fibonacci Sequence:", fibonacci(15))
+}
+
+
 	
