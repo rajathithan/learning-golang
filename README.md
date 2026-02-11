@@ -198,3 +198,11 @@ Introduces error handling in Go, which is a fundamental part of writing robust p
 - Checking for errors after function calls and handling them appropriately.
 - Printing error messages to inform users about what went wrong.
 - Using conditional logic to branch based on whether an operation succeeded or failed.
+
+## 10. int_10_customerrors
+Introduces custom error types in Go, allowing for more structured and informative error handling. The program demonstrates:
+- Defining custom error structs that implement the error interface.
+- Creating custom error constructors for consistent error creation.
+- Using `errors.As()` for type assertion to check and extract specific error types.
+- Handling different types of errors with appropriate responses.
+- Simulating real-world scenarios like HTTP errors with status codes and messages.

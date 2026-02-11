@@ -28,7 +28,7 @@ func fetchResource(url string) error {
 	// Simulating an error scenario
 	if url == "" {
 		return newHTTPError(400, "Bad Request: URL cannot be empty")
-	}
+	} 
 	// Simulate successful fetch
 	return nil
 }
