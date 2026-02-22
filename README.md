@@ -207,3 +207,16 @@ Introduces custom error types in Go, allowing for more structured and informativ
 - Using `errors.As()` for type assertion to check and extract specific error types.
 - Handling different types of errors with appropriate responses.
 - Simulating real-world scenarios like HTTP errors with status codes and messages.
+
+## 11. int_11_stringfunc
+Introduces string manipulation functions in Go, showcasing the `strings` package and related utilities. The program demonstrates:
+- Converting strings to uppercase and lowercase using `strings.ToUpper` and `strings.ToLower`.
+- Checking for substrings with `strings.Contains`, replacing with `strings.Replace`, and splitting/joining with `strings.Split` and `strings.Join`.
+- Trimming whitespace with `strings.TrimSpace`, checking prefixes/suffixes with `HasPrefix` and `HasSuffix`.
+- Finding indices with `strings.Index`, substring extraction via slicing.
+- String concatenation, repetition with `strings.Repeat`, and length checks.
+- Working with ASCII and Unicode values, byte vs. rune counts.
+- Simple email validation, integer to string conversion with `strconv.Itoa`.
+- Counting character occurrences, regular expressions with `regexp` for digit extraction.
+- Handling Unicode strings with `utf8.RuneCountInString`.
+- Efficient string building with `strings.Builder` for concatenation.
