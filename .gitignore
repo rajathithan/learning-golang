@@ -1,5 +1,9 @@
 *.mod
-basics_01_imports/basics_01_imports
-basics_02_variables/basics_02_variables
 */.DS_Store
 .DS_Store
+**/.DS_Store
+/.DS_Store
+**/.DS_Store
+.DS_Store
+../.DS_Store
+
