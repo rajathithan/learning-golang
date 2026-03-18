@@ -220,3 +220,11 @@ Introduces string manipulation functions in Go, showcasing the `strings` package
 - Counting character occurrences, regular expressions with `regexp` for digit extraction.
 - Handling Unicode strings with `utf8.RuneCountInString`.
 - Efficient string building with `strings.Builder` for concatenation.
+
+## 12. int_12_stringformat
+Introduces string formatting in Go using the `fmt` package. The program demonstrates:
+- Using `fmt.Sprintf` to format strings and store the result in a variable.
+- Using `fmt.Printf` to print formatted output directly to the console.
+- Formatting numbers with leading zeros using width specifiers like `%05d`.
+- Formatting strings with width and alignment using `%10s` (right-aligned) and `%-10s` (left-aligned).
+- The difference between interpreted string literals (`"Hello \nWorld"`) and raw string literals (`` `Hello \nWorld` ``) for preserving escape sequences.

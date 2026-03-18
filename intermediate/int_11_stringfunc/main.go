@@ -108,15 +108,10 @@ func main() {
 	count := strings.Count(str, string(charToCount))
 	fmt.Printf("Number of occurrences of '%c' in the original string: %d\n", charToCount, count)
 
-	// Check if it has a prefix or suffix
-	hasPrefix2 := strings.HasPrefix(str, "Hello")
-	hasSuffix2 := strings.HasSuffix(str, "!")
-	fmt.Printf("Does the original string start with 'Hello'? %t\n", hasPrefix2)
-	fmt.Printf("Does the original string end with '!'? %t\n", hasSuffix2)
-
 	// find digits in a string using regexp	
 	str4 := "The price is 100 dollars and 50 cents."
 	re := regexp.MustCompile("[0-9]+")
+
 	// -1 means find all occurrences
 	digits := re.FindAllString(str4, -1)
 	fmt.Printf("Digits in the original string: %v\n", digits)
@@ -149,4 +144,6 @@ func main() {
 	builder.WriteString("Go is great!")
 	finalString3 := builder.String()
 	fmt.Println("String built after resetting the builder:", finalString3)
+
+	
 }
