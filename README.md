@@ -228,3 +228,11 @@ Introduces string formatting in Go using the `fmt` package. The program demonstr
 - Formatting numbers with leading zeros using width specifiers like `%05d`.
 - Formatting strings with width and alignment using `%10s` (right-aligned) and `%-10s` (left-aligned).
 - The difference between interpreted string literals (`"Hello \nWorld"`) and raw string literals (`` `Hello \nWorld` ``) for preserving escape sequences.
+
+## 13. int_13_templates
+Introduces Go's template package for generating text output from templates. The program demonstrates:
+- Defining and parsing templates using `template.Must()` and `template.New().Parse()`.
+- Executing templates with data structures (maps).
+- Creating multiple templates and selecting them based on user input.
+- Using `bufio` for reading user input from stdin.
+- Handling different data types in templates (strings, numbers).
